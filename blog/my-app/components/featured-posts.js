@@ -1,9 +1,13 @@
+import classes from './featured-posts.module.css'
+import PostsGrid from './posts/posts-grid';
 
-
-function FeaturedPosts () {
+function FeaturedPosts (props) {
   return (
-    <div>featured-posts</div>
-  )
+    <section className={classes.latest}> 
+        <h2> featured-posts </h2>
+     <PostsGrid  posts ={props.posts}/>
+    </section>
+  )     
 }
 
-export default FeaturedPosts 
+export default FeaturedPosts;
